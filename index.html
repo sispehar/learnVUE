@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+</head>
+<body>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<div class="flex-center position-ref full-height" id="root" >
+	<input type="text" id="input" v-model="message" />
+		{{message}}
+</div>
+<script>
+	new Vue({
+		el:'#root',
+		data: {
+			message: 'Hello world!'
+		}
+	})
+</script>
+</body>
+</html>
